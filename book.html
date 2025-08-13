@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Details</title>
+  <link rel="stylesheet" href="book.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="has-submenu">
+        <i class="bi bi-house"></i> Home
+        <ul class="submenu">
+          <li><a class="dashboard" href="dashboard.html">Dashboard</a></li>
+          <li>News</li>
+          <li>Updates</li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <i class="bi bi-controller"></i> Categories
+        <ul class="submenu">
+          <li>Action</li>
+          <li>Fantasy</li>
+          <li>Romance</li>
+          <li>Drama</li>
+          <li>Sci-Fi</li>
+          <li>Tragedy</li>
+          <li>Dark</li>
+        </ul>
+      </li>
+      <li><i class="bi bi-star"></i> Favorites</li>
+      <li class="has-submenu">
+        <i class="bi bi-heart-fill" style="color: blue;"></i> Profile
+        <ul class="submenu">
+          <li>Account</li>
+          <li>Settings</li>
+          <li>Logout</li>
+        </ul>
+      </li>
+      <li><i class="bi bi-search"></i> Search</li>
+      <li><i class="bi bi-heart"></i> Liked</li>
+      <li><i class="bi bi-info-circle"></i> About</li>
+    </ul>
+  </div>
+
+  <main class="content">
+    <section class="book-hero">
+      <div class="book-wallpaper">
+        <div class="book-card">
+          <img src="image/attachment_39493946.jpg" alt="Book Cover" />
+          <h3>Book Title 5</h3>
+          <p>Short description of book 5.</p>
+        </div>
+        <div class="book-info">
+          <h1 class="book-title">Mistborn</h1>
+          <p id="typewriter" class="book-description"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-details">
+      <div class="stat">
+        <i class="bi bi-people-fill"></i>
+        <div class="stat-text">
+          <span class="label">Readers</span>
+          <span class="value">1245</span>
+        </div>
+      </div>
+      <div class="stat">
+        <i class="bi bi-bookmarks-fill"></i>
+        <div class="stat-text">
+          <span class="label">Genres</span>
+          <span class="value">Fantasy, Adventure</span>
+        </div>
+      </div>
+      <div class="stat">
+        <i class="bi bi-heart-fill"></i>
+        <div class="stat-text">
+          <span class="label">Likes</span>
+          <span class="value">678</span>
+        </div>
+      </div>
+      <button class="add-to-cart">
+        <i class="bi bi-cart-plus-fill"></i> Add to Cart
+      </button>
+    </section>
+
+    <section class="book-rating" id="rating-section">
+      <h2 class="rating-title">Reader Feedback</h2>
+      <form id="feedback-form">
+        <div class="rating-bar">
+          <label>
+            <input type="radio" name="rating" value="10" />
+            Poor (<span class="percent-text">10%</span>)
+          </label>
+          <div class="bar-bg">
+            <div class="bar-fill" data-percent="10" style="width: 10%;"></div>
+          </div>
+        </div>
+        <div class="rating-bar">
+          <label>
+            <input type="radio" name="rating" value="20" />
+            Fair (<span class="percent-text">20%</span>)
+          </label>
+          <div class="bar-bg">
+            <div class="bar-fill" data-percent="20" style="width: 20%;"></div>
+          </div>
+        </div>
+        <div class="rating-bar">
+          <label>
+            <input type="radio" name="rating" value="35" />
+            Good (<span class="percent-text">35%</span>)
+          </label>
+          <div class="bar-bg">
+            <div class="bar-fill" data-percent="35" style="width: 35%;"></div>
+          </div>
+        </div>
+        <div class="rating-bar">
+          <label>
+            <input type="radio" name="rating" value="35" />
+            Excellent (<span class="percent-text">35%</span>)
+          </label>
+          <div class="bar-bg">
+            <div class="bar-fill" data-percent="35" style="width: 35%;"></div>
+          </div>
+        </div>
+        <button type="submit" class="submit-feedback">Submit Feedback</button>
+      </form>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <div class="contact-item"><i class="bi bi-telephone-fill"></i> 123-456-789</div>
+          <div class="contact-item"><i class="bi bi-telegram"></i> @bookworld</div>
+          <div class="contact-item"><i class="bi bi-instagram"></i> @bookworld.official</div>
+          <div class="contact-item"><i class="bi bi-github"></i> github.com/bookworld</div>
+          <div class="contact-item"><i class="bi bi-facebook"></i> facebook.com/bookworld</div>
+        </div>
+        <div class="footer-right">
+          <h3>Legal</h3>
+          <p>© 2025 BookWorld. All rights reserved.</p>
+          <p>Unauthorized use of content is prohibited.</p>
+          <p>This website is protected by intellectual property laws.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus, id dignissimos similique eum explicabo at, nobis exercitationem voluptatem veniam corporis facere sint saepe iusto recusandae aliquid nostrum eius nihil.";
+    const element = document.getElementById("typewriter");
+    let index = 0;
+    function type() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 80);
+      }
+    }
+    window.onload = type;
+
+    function updateBars(percentages) {
+      const bars = document.querySelectorAll("#rating-section .bar-fill");
+      const percentTexts = document.querySelectorAll("#rating-section .percent-text");
+      bars.forEach((bar, i) => {
+        bar.style.width = "0";
+        bar.setAttribute("data-percent", percentages[i]);
+      });
+      setTimeout(() => {
+        bars.forEach((bar, i) => {
+          bar.style.width = percentages[i] + "%";
+        });
+        percentTexts.forEach((span, i) => {
+          span.textContent = percentages[i] + "%";
+        });
+      }, 100);
+    }
+
+    let currentPercentages = [10, 20, 35, 35];
+
+    function animateRatingBars() {
+      const section = document.getElementById("rating-section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            updateBars(currentPercentages);
+            observer.unobserve(section);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(section);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      animateRatingBars();
+      document.getElementById("feedback-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const selected = document.querySelector('input[name="rating"]:checked');
+        if (!selected) {
+          alert("Please select a rating before submitting.");
+          return;
+        }
+        const value = parseInt(selected.value);
+        currentPercentages = currentPercentages.map(() => 5);
+        const index = Array.from(document.querySelectorAll('input[name="rating"]')).indexOf(selected);
+        currentPercentages[index] = 30;
+        updateBars(currentPercentages);
+      });
+    });
+  </script>
+</body>
+</html>

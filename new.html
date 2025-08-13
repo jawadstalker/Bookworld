@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Page</title>
+  <link rel="stylesheet" href="news.css"/>
+</head>
+<body>
+
+  <aside class="sidebar" id="newsSidebar">
+    <ul class="sidebar-menu">
+      <li class="has-submenu">
+        <i class="bi r bi-house"></i> Home
+        <ul class="submenu">
+          <li><a class="dashbord" href="dashbord.html">Dashboard</a></li>
+          <li>News</li>
+          <li>Updates</li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <i class="bi r bi-controller"></i> Categories
+        <ul class="submenu">
+          <li>Action</li>
+          <li>Fantasy</li>
+          <li>Romance</li>
+          <li>Drama</li>
+          <li>Sci-Fic</li>
+          <li>Tragdey</li>
+          <li>Dark</li>
+        </ul>
+      </li>
+      <li><i class="bi r bi-star"></i> Favorites</li>
+      <li class="has-submenu">
+        <i class="bi r bi-heart-fill" style="color: blue;"></i> Profile
+        <ul class="submenu">
+          <li>Account</li>
+          <li>Settings</li>
+          <li>Logout</li>
+        </ul>
+      </li>
+      <li><i class="bi r bi-search"></i> Search</li>
+      <li><i class="bi r bi-heart"></i> Liked</li>
+      <li><i class="bi r bi-info-circle"></i> About</li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <div class="slider-header">Top News</div>
+    <div class="slider">
+      <div class="slide active">
+        <div class="image" style="background-image: url('image/sanderson-1-superJumbo.jpg');"></div>
+        <div class="caption"></div>
+      </div>
+      <div class="slide">
+        <div class="image" style="background-image: url('image/ezgif-1f2ecc05560c27.jpg');"></div>
+        <div class="caption"></div>
+      </div>
+      <div class="slide">
+        <div class="image" style="background-image: url('image/ezgif-1051451212e137.jpg');"></div>
+        <div class="caption"></div>
+      </div>
+    </div>
+    <button id="toggleNews">☰ News</button>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleNews');
+    const newsSidebar = document.getElementById('newsSidebar');
+    toggleBtn.addEventListener('click', () => {
+      newsSidebar.classList.toggle('active');
+    });
+
+    const slides = document.querySelectorAll('.slide');
+    const captions = [
+      "Breaking: Major political shift in the region",
+      "Tech: New smartphone announced by top brand",
+      "Sports: Championship final ends in shock result"
+    ];
+
+    let index = 0;
+    let typingInterval;
+
+    function typeCaption(slideIndex) {
+      const captionDiv = slides[slideIndex].querySelector('.caption');
+      captionDiv.textContent = "";
+      const text = captions[slideIndex];
+      let i = 0;
+
+      typingInterval = setInterval(() => {
+        if (i < text.length) {
+          captionDiv.textContent += text.charAt(i);
+          i++;
+        } else {
+          clearInterval(typingInterval);
+        }
+      }, 40);
+    }
+
+    function showSlide() {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        slide.querySelector('.caption').textContent = "";
+      });
+      slides[index].classList.add('active');
+      typeCaption(index);
+    }
+
+    showSlide();
+
+    setInterval(() => {
+      clearInterval(typingInterval);
+      index = (index + 1) % slides.length;
+      showSlide();
+    }, 5000);
+  </script>
+
+</body>
+</html>

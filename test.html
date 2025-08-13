@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book World</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <aside class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="has-submenu">
+        <i class="bi r bi-house"></i> Home
+        <ul class="submenu">
+          <li ><a class="dashbord" href="dashbord.html"> Dashboard</a></li>
+          <li>News</li>
+          <li>Updates</li>
+        </ul>
+      </li>
+    
+      <li class="has-submenu">
+        <i class="bi r bi-controller"></i> Categories
+        <ul class="submenu">
+          <li>Action</li>
+          <li>Fantasy</li>
+          <li>Romance</li>
+          <li>Drama</li>
+          <li>Sci-Fic</li>
+          <li>Tragdey</li>
+          <li>Dark</li>
+        </ul>
+      </li>
+    
+      <li><i class="bi r bi-star"></i> Favorites</li>
+    
+      <li class="has-submenu">
+        <i class="bi r bi-heart-fill" style="color: blue;"></i> Profile
+        <ul class="submenu">
+          <li>Account</li>
+          <li>Settings</li>
+          <li>Logout</li>
+        </ul>
+      </li>
+    
+      <li><i class="bi r bi-search"></i> Search</li>
+      <li><i class="bi r bi-heart"></i> Liked</li>
+      <li><i class="bi r bi-info-circle"></i> About</li>
+    </ul>
+    
+    </aside>
+  <div class="content-wrapper">
+    <div class="new">
+    <div class="logo-title right">
+      <img src="ChatGPT Image May 29, 2025, 12_08_27 PM.png" alt="Book World Logo" class="site-logo">
+      <h1>Book World</h1>
+    </div>
+    <header class="navbar left">
+      <nav class="top-subnav">
+        <ul>
+         <a href="login.html" class="login">Login</a>
+         <a class="login">Sign up</a>
+        </ul>
+      </nav> 
+    </header>
+  </div>
+    <section class="slider">
+      <div class="slide active">
+        <img src="Playmat-_0002_Mistborn.png" alt="Novel 1">
+        <div class="slide-text">
+          <h2>Novel Title 1</h2>
+          <p>This is a short summary of the first novel. A gripping story full of mystery and magic.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="wp6749559.jpg" alt="Novel 2">
+        <div class="slide-text">
+          <h2>Novel Title 2</h2>
+          <p>This novel takes you through an epic journey of love, loss, and redemption.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="wp6749549.png" alt="Novel 3">
+        <div class="slide-text">
+          <h2>Novel Title 3</h2>
+          <p>An adventure through forgotten lands and ancient secrets waiting to be revealed.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="188c7ay8xw891.jpg" alt="Novel 2">
+        <div class="slide-text">
+          <h2>Novel Title 2</h2>
+          <p>This novel takes you through an epic journey of love, loss, and redemption.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="title">
+      <div class="title-content">Most popular</div>
+    </div>
+
+    <div class="container">
+      <main class="main-content scroll-wrapper">
+        <div class="scroll-content" id="scroll-content">
+          <a href="book.html" class="book-card">
+            <img src="slaughter.jpg" alt="Book 1" />
+            <h3>Book Title 1</h3>
+            <p>Short description of book 1.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="The-Curse-of-Infinity-by-Rachel-Hetrick.png" alt="Book 2" />
+            <h3>Book Title 2</h3>
+            <p>Short description of book 2.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="81j4C6j3dRL.jpg" alt="Book 3" />
+            <h3>Book Title 3</h3>
+            <p>Short description of book 3.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="9780006479888_1.webp" alt="Book 4" />
+            <h3>Book Title 4</h3>
+            <p>Short description of book 4.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="imagesew.jpg" alt="Book 5" />
+            <h3>Book Title 5</h3>
+            <p>Short description of book 5.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="attachment_39493946.jpg" alt="Book 6" />
+            <h3>Book Title 6</h3>
+            <p>Short description of book 6.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="Magali-Villenevue-Witcher-cover.jpg" alt="Book 7" />
+            <h3>Book Title 7</h3>
+            <p>Short description of book 7.</p>
+          </a>
+          <a href="book.html" class="book-card">
+            <img src="book1-sketch2_col3.jpg" alt="Book 8" />
+            <h3>Book Title 8</h3>
+            <p>Short description of book 8.</p>
+          </a>
+          
+        </div>
+      </main>           
+      <section class="authors-section">
+        <h2 class="authors-title">Authors</h2>
+        <div class="authors-slider" id="authorsSlider">
+          <div class="author-card">
+            <img src="J._R._R._Tolkien,_ca._1925.jpg" alt="Author 1">
+            <h3>Jane Austen</h3>
+            <p>"There is no charm equal to tenderness of heart."</p>
+          </div>
+          <div class="author-card">
+            <img src="square.jpg" alt="Author 2">
+            <h3>George Orwell</h3>
+            <p>"In a time of deceit telling the truth is a revolutionary act."</p>
+          </div>
+          <div class="author-card">
+            <img src="Portrait_photoshoot_at_Worldcon_75,_Helsinki,_before_the_Hugo_Awards_–_George_R._R._Martin_(cropped).jpg" alt="Author 3">
+            <h3>Mark Twain</h3>
+            <p>"The secret of getting ahead is getting started."</p>
+          </div>
+          <div class="author-card">
+            <img src="j-k-rowling.png" alt="Author 4">
+            <h3>Virginia Woolf</h3>
+            <p>"Books are the mirrors of the soul."</p>
+          </div>
+          <div class="author-card">
+            <img src="e.jpg" alt="Author 5">
+            <h3>Leo Tolstoy</h3>
+            <p>"If you want to be happy, be."</p>
+          </div>
+          <div class="author-card">
+            <img src="licensed-image.jpg" alt="Author 6">
+            <h3>J.K. Rowling</h3>
+            <p>"It does not do to dwell on dreams and forget to live."</p>
+          </div>
+          <div class="author-card">
+            <img src="Portrait_photoshoot_at_Worldcon_75,_Helsinki,_before_the_Hugo_Awards_–_George_R._R._Martin_(cropped).jpg" alt="Author 7">
+            <h3>Oscar Wilde</h3>
+            <p>"Be yourself; everyone else is already taken."</p>
+          </div>
+          <div class="author-card">
+            <img src="Screenshot_2024-07-26_at_11.59.47_AM.webp" alt="Author 8">
+            <h3>Emily Dickinson</h3>
+            <p>"Hope is the thing with feathers."</p>
+          </div>
+        </div>
+      </section>           
+    </div> 
+    <section class="fantasy-slider-section">
+      <div class="fantasy-slider" id="fantasySlider">
+        <div class="fantasy-slide active" style="background-image: url('d6fobgp-f2fe6d40-fa87-4548-899f-931a83750763.jpg');">
+          <div class="slide-caption" style="font-family: 'Cinzel Decorative', cursive;">
+            “In a land of myth and a time of magic..."
+            <button class="read-now">Read now</button>
+          </div>
+        </div>
+        <div class="fantasy-slide" style="background-image: url('ezgif-1051451212e137.jpg');">
+          <div class="slide-caption" style="font-family: 'Indie Flower', cursive;">
+            “Only those who dare may find the truth.”
+            <button class="read-now">Read now</button>
+          </div>
+        </div>
+        <div class="fantasy-slide" style="background-image: url('The-Lich-King_world-of-warcraft_1920.jpg');">
+          <div class="slide-caption" style="font-family: 'UnifrakturCook', cursive;">
+            “The darkness hides more than fear.”
+            <button class="read-now">Read now</button>
+          </div>
+        </div>
+        <div class="fantasy-slide" style="background-image: url('ezgif-1f2ecc05560c27.jpg');">
+          <div class="slide-caption" style="font-family: 'Satisfy', cursive;">
+            “Legends never fade... they echo forever.”
+            <button class="read-now">Read now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing-section">
+      <h2 class="pricing-title">Pricing Plans</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <img src="bookpng.parspng.com-6.png" alt="Free Plan Icon" class="plan-icon">
+          <h3>Free</h3>
+          <ul class="features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Basic Access</li>
+            <li><i class="bi bi-book"></i> Limited Books</li>
+            <li><i class="bi bi-clock"></i> Slow Speed</li>
+          </ul>
+          <button class="pricing-btn">Get Started</button>
+          <p class="icon-text">Free</p>
+        </div>
+        <div class="pricing-card">
+          <img src="png-transparent-computer-icons-warrior-warrior-hand-logo-black-thumbnail-removebg-preview.png" alt="Warrior Plan Icon" class="plan-icon">
+          <h3>Warrior</h3>
+          <ul class="features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Full Library</li>
+            <li><i class="bi bi-lightning-charge-fill"></i> Fast Speed</li>
+            <li><i class="bi bi-people-fill"></i> Community Access</li>
+          </ul>
+          <button class="pricing-btn">Get Started</button>
+          <p class="icon-text">24.3$</p>
+        </div>
+        <div class="pricing-card">
+          <img src="1878520-200-removebg-preview.svg" alt="Dragon Plan Icon" class="plan-icon dragon">
+          <h3>Dragon</h3>
+          <ul class="features-list">
+            <li><i class="bi bi-stars"></i> VIP Features</li>
+            <li><i class="bi bi-unlock-fill"></i> Unlimited Access</li>
+            <li><i class="bi bi-fire"></i> Special Releases</li>
+          </ul>
+          <button class="pricing-btn">Get Started</button>
+          <p class="icon-text">36.5$</p>
+         
+        </div>
+      </div>
+
+    </section>
+    
+    <section class="top-users">
+      <h2 class="section-title">Top Users</h2>
+      <div class="top-users-grid">
+        <div class="user-card">
+          <img src="74.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Jane Doe</h4>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="original.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>John Smith</h4>
+            <p>UI Designer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="5560va6tsg191.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Emily Clark</h4>
+            <p>Data Analyst</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="circle-background-profile-picture-maker-regular-abe86059.webp" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Chris Adams</h4>
+            <p>SEO Expert</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="13761-zoom.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Sara Lee</h4>
+            <p>Marketing</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="8888-random.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Tom Hardy</h4>
+            <p>Security Specialist</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="unnamed.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Linda Kim</h4>
+            <p>Mobile Developer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="04fdb256-b489-4571-972c-249a0cb35019.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Robert Tan</h4>
+            <p>DevOps Engineer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="television-show-nickelodeon-frederator-studios-png-favpng-LseeM2QD0J20FNdHjFdeBccLZ_t.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Angela Stone</h4>
+            <p>HR Specialist</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="ezgif-1051451212e137.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Mike Lin</h4>
+            <p>Graphic Designer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="The-Lich-King_world-of-warcraft_1920.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Karen Bloom</h4>
+            <p>Project Manager</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="Drow_Ranger_icon.webp" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Steven Yu</h4>
+            <p>Backend Developer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="aesthetic-profile-pictures-cartoon-girl-yi6yia3oy54btnwg.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Nina West</h4>
+            <p>Content Writer</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="resident-evil-4-remake-ada-wong.avif" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Oscar Reed</h4>
+            <p>QA Tester</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="3D88F9ED_929F_4C28_9CA3_F4896C91567A.jpeg" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Sophie Hall</h4>
+            <p>Cloud Architect</p>
+          </div>
+        </div>
+        <div class="user-card">
+          <img src="The-Curse-of-Infinity-by-Rachel-Hetrick.png" alt="Profile Picture" class="profile-pic">
+          <div class="user-info">
+            <h4>Lucas Ray</h4>
+            <p>AI Researcher</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <div class="contact-item"><i class="bi bi-telephone-fill"></i> 123-456-789</div>
+          <div class="contact-item"><i class="bi bi-telegram"></i> @bookworld</div>
+          <div class="contact-item"><i class="bi bi-instagram"></i> @bookworld.official</div>
+          <div class="contact-item"><i class="bi bi-github"></i> github.com/bookworld</div>
+          <div class="contact-item"><i class="bi bi-facebook"></i> facebook.com/bookworld</div>
+        </div>
+        <div class="footer-right">
+          <h3>Legal</h3>
+          <p>© 2025 BookWorld. All rights reserved.</p>
+          <p>Unauthorized use of content is prohibited.</p>
+          <p>This website is protected by intellectual property laws.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+  
+  
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+    setInterval(showNextSlide, 3000);
+   
+  const slider = document.getElementById("authorsSlider");
+  let scrollAmount = 0;
+
+  function autoScrollAuthors() {
+    const cardWidth = slider.querySelector(".author-card").offsetWidth + 16;
+    scrollAmount += cardWidth;
+
+    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+      scrollAmount = 0;
+    }
+
+    slider.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  setInterval(autoScrollAuthors, 3000);
+  const scrollContainer = document.getElementById('scroll-content');
+  const cards = scrollContainer.children;
+  const cloneCount = cards.length;
+
+  for (let i = 0; i < cloneCount; i++) {
+    const clone = cards[i].cloneNode(true);
+    scrollContainer.appendChild(clone);
+  }
+  document.querySelectorAll('.has-submenu').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.stopPropagation(); 
+      this.classList.toggle('active');
+
+      document.querySelectorAll('.has-submenu').forEach(other => {
+        if (other !== this) {
+          other.classList.remove('active');
+        }
+      });
+    });
+  });
+  const fantasySlides = document.querySelectorAll('.fantasy-slide');
+let fantasyCurrent = 0;
+
+function nextFantasySlide() {
+  fantasySlides[fantasyCurrent].classList.remove('active');
+  fantasyCurrent = (fantasyCurrent + 1) % fantasySlides.length;
+  fantasySlides[fantasyCurrent].classList.add('active');
+}
+
+setInterval(nextFantasySlide, 3000); 
+
+  </script>
+</body>
+</html>

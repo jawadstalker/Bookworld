@@ -1,0 +1,144 @@
+.main-content {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    margin-left: 240px;
+  }
+  
+  .slider-header {
+    width: 100%;
+    color: #4da6ff;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    right: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    border-left: 5px solid #2980b9;
+    min-height: 60px;
+    max-width: 80%;
+  }
+  
+  
+  
+
+  
+
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d1a;
+    color: #e6e6e6;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #121223;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+  }
+  .slider-header{
+  display: flex;
+  justify-content: cenetr;
+  align-items: center;
+  color: #4da6ff;
+  }
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: #4da6ff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-menu li:hover {
+    background-color: #1e1e2f;
+    border-radius: 15px;
+    transform: translateY(-5px);
+  }
+  
+  .submenu {
+    list-style: none;
+    padding-left: 1rem;
+    display: none;
+    margin-top: 0.5rem;
+  }
+  
+  .submenu li {
+    padding: 0.5rem 1rem;
+    background-color: #161627;
+    margin: 0.3rem 0;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .sidebar-menu .submenu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+  }
+  
+  .sidebar-menu .has-submenu:hover .submenu {
+    display: block;
+    opacity: 1;
+  }
+  
+  .submenu li:hover {
+    background-color: #22223a;
+  }
+  
+  
+  .has-submenu.active .submenu {
+    display: block;
+  }
